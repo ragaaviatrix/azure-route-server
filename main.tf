@@ -61,7 +61,7 @@ resource "azurerm_virtual_network_gateway" "default" {
   location            = local.region
   resource_group_name = local.resource_group_name
 
-  type = "ExpressRoute"
+  type = "Vpn"
   sku  = var.vng_sku
 
   ip_configuration {
