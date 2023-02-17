@@ -63,6 +63,8 @@ resource "azurerm_virtual_network_gateway" "default" {
 
   type = "Vpn"
   sku  = var.vng_sku
+  active_active = true
+  enable_bgp    = true
 
   ip_configuration {
     name                          = "vnetGatewayConfig"
