@@ -75,7 +75,7 @@ variable "network_domain" {
 variable "vng_sku" {
   description = "SKU to use to deploy the VNG."
   type        = string
-  default     = "Standard"
+  default     = "VpnGw1AZ"
   nullable    = false
 }
 
